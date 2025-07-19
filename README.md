@@ -1,79 +1,112 @@
-# 💸 Expense Tracker API
+# 💸 Expense Tracker – Full Stack App (MERN + Vite)
 
-A backend API built with **Node.js**, **Express**, and **MongoDB** for managing personal and group expenses. Supports user authentication, individual expense tracking, group expense sharing, and a bill-splitting calculator.
+A complete full-stack application for tracking individual and group expenses. Built using the **MERN stack** with a **Vite-powered React frontend** and an **Express/MongoDB backend**. Users can add, edit, and delete expenses, create or join groups via invite codes, and split bills using the built-in calculator.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 User Signup & Login with JWT Authentication
-- 📊 Add / Edit / Delete / View Personal Expenses
-- 👥 Create & Join Groups with Invite Codes
-- 💰 Add Group Expenses with Automatic Member Split
-- 🧮 Bill Splitter Calculator
-- 🧪 Tested with Supertest
+### 👤 User
+- Signup/Login with JWT authentication
+- Add/Edit/Delete personal expenses
+- View total spending per user
+
+### 👥 Group
+- Create groups with unique invite codes
+- Join existing groups via invite link
+- Add group expenses
+- View members and shared expense logs
+
+### 🧮 Utility
+- Bill divider calculator (split amount & tip equally)
 
 ---
 
 ## 🛠 Tech Stack
 
-- Node.js
-- Express.js
-- MongoDB (Mongoose)
-- JWT
-- bcrypt
-- dotenv
-- nanoid
-- CORS
-- Supertest (for testing)
+| Layer     | Tech                     |
+|-----------|--------------------------|
+| Frontend  | React (Vite), Tailwind CSS |
+| Backend   | Node.js, Express         |
+| Database  | MongoDB, Mongoose        |
+| Auth      | JWT, bcrypt              |
+| Tools     | nanoid, dotenv, CORS     |
+| Testing   | Jest, Supertest          |
 
 ---
 
-🔐 Environment Variables
-Create a .env file in the root directory and add:
+## 📁 Project Structure
+
+Expense-Tracker/
+├── backend/
+│ ├── _tests/
+│ ├── models/
+│ ├── server.js
+│ ├── .env
+│ └── package.json
+│
+├── frontend/
+│ ├── public/
+│ ├── src/
+│ ├── vite.config.js
+│ ├── index.html
+│ └── package.json
+
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YashuAggarwall/Expense-Tracker.git
+cd Expense-Tracker
+
+
+2. Setup Backend
+cd backend
+npm install
+
+Create a .env file inside backend/:
 MongooseUri=your_mongodb_connection_string
-secret=your_jwt_secret
+secret=your_jwt_secret_key
 
----
-
-🚀 Running the Server :
+Start the backend server:
 npm start
-Server runs on http://localhost:5000
+Runs on http://localhost:5000
 
----
+3. Setup Frontend
+cd ../frontend
+npm install
+npm run dev
+Runs on http://localhost:5173 (default Vite port)
 
-🧪 Running Tests: 
+🧪 Running Tests (Backend)
+cd backend
 npm test
+Uses Supertest + Jest for API testing.
 
----  
+📬 API Endpoints (Backend)
+🔐 Authentication
+POST /signup – Register user
+POST /login – Login user
 
-📬 API Endpoints
-Auth
-POST /signup
-POST /login
-
-Individual Expenses
+📊 Personal Expenses
 POST /add-expense
 GET /expenses/:username
 PUT /expense-edit/:id
 DELETE /delete/:id
 DELETE /expense-delete/:username
 
-Groups
-POST /group — create a group
-POST /join-group/:inviteCode — join with code
-POST /group-expenses/:invitelink — add group expense
-GET /groupchat/:inviteCode — get group details
-DELETE /group-delete/:id — delete group expense
+👥 Group Management
+POST /group – Create group
+POST /join-group/:inviteCode – Join group
+POST /group-expenses/:invitelink – Add group expense
+GET /groupchat/:inviteCode – View group
+DELETE /group-delete/:id – Delete group expense
 
-Calculator
-POST /divider — split amount & tip among members
+🧮 Calculator
+POST /divider – Split bill among members
 
----
-
-## 📦 Installation
-
-```bash
-git clone https://github.com/YashuAggarwall/Expense-Tracker.git
-cd Expense-Tracker
-npm install
