@@ -1,0 +1,36 @@
+.navbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 30px;
+}
+
+.navbox h1{
+    border-bottom: 5px solid orangered;
+    border-radius: 15px;
+}
+
+.rightnav {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.rightnav button{
+    padding: 9px;
+    width: 87px;
+    font-size: 15px;
+    border: none;
+    border-radius: 29px;
+    color: whitesmoke;
+    background: inherit;
+    box-shadow: 2px 2px 2px;
+}
+
+.rightnav button:hover{
+    font-weight: 900;
+    color: whitesmoke;
+}

@@ -1,0 +1,20 @@
+ body {
+  background: linear-gradient(-45deg, lch(7.96% 14.45 283.28), #1e293b, #334155, #1e293b);
+  background-size: 400% 400%;
+  /* animation: gradientBG 12s ease infinite; */
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-y: scroll;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

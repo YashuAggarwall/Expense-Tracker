@@ -1,0 +1,68 @@
+.calbox{
+    /* border: 2px solid white; */
+    display: flex;
+    height: auto;
+    width: 500px;
+    flex-direction: column;
+    margin: auto;
+    padding: 0px;
+    box-shadow: 2px 4px 4px;
+    margin-top: 0px;
+    gap: 19px;
+    
+}
+
+.calchead{
+    text-align: center;
+}
+
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 2px solid black;
+}
+.inputbox input{
+    width: 80%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    border-radius: 5px;box-shadow: 2px 4px 8px black;
+    margin-left: 15px;
+    color: whitesmoke;
+    
+}
+
+.calbutton{
+    text-align: center;
+    box-shadow: none;
+    align-self: center;
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+
+.calbutton:hover{
+    background: red;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.adddd{
+    margin-left: 50px;
+}
+
+.expaddbox{
+    display: flex;
+    justify-content: center;
+}
+.expaddbox button{
+    color: black;
+    background: white;
+
+}

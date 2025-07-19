@@ -1,0 +1,103 @@
+.trackflex{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.leftside, 
+.thirdbox
+{
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+  h1{
+    margin-bottom: 0px;
+    color: bisque;
+    font-size: 45px;
+    margin-bottom: 20px;
+ }
+
+  h2{
+    color: whitesmoke;
+    font-size: 28px;
+ }
+
+ .leftside button{
+    padding: 15px;
+    width: 280px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: black;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow: 5px 5px 5px;
+ }
+ .leftside button:hover{
+    font-weight: 900;
+ }
+
+
+.rightside{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+
+    
+
+}
+
+.herobutton{
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    padding: 15px;
+
+}
+
+ button{
+    padding: 10px;
+    width: 280px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: black;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+    box-shadow: 5px 5px 5px;
+
+}
+
+ button:hover{
+    font-weight: 900;
+    box-shadow: none;
+}
+
+.logbox{
+    align-self: center;
+    margin-top: 30px;
+}
+
+.logbox button{
+        background: red;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 100;
+    width: 126px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.logbox button:hover{
+    background: black;
+    font-weight: 500;
+}

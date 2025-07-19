@@ -1,0 +1,62 @@
+.createbox{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    margin: auto;
+    border-radius: 85px;
+    margin-top: 8%;
+    box-shadow: 0px 0px 0px rgba(255,255,255,0.3), 0 4px 20px rgba(255,255,255,0.2);
+    }
+
+    .createbox form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+
+    .createbox h1{
+        color: white;
+        font-weight: bolder;
+
+    }
+    .createbox button {
+        padding: 10px;
+        width: 105px;
+        color: white;
+        outline: none;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgb(20, 20, 20);
+        background: inherit;
+        border: none;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+.createbox button:hover{
+    font-weight: 700;
+}
+
+.createbox input {
+    padding: 15px;
+    outline: none;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(20, 20, 20);
+    background: inherit;
+    border: none;
+}
+ #ll{
+    padding: 15px;
+    border-radius: 20px;
+    background: inherit;
+    font-size: 20px;
+ }
+ h3{
+    color: white;
+ }

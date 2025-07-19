@@ -1,0 +1,55 @@
+.addouter{
+    height: 500px;
+    width: 500px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 6%;
+    gap:20px;
+    background-color: inherit;
+    box-shadow: 10px 10px 10px ;
+    border-radius: 10px;
+}
+.addform{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.addouter h2 {
+    margin-bottom: 20px;
+    text-shadow: 10px 10px 10px black;
+}
+
+.addform input {
+    border: none;
+    border-radius: 15px;
+    width: 80%;
+    outline: none;
+       padding: 15px;
+    font-size: 20px;
+    box-shadow: 10px 10px 10px ;
+}
+
+
+.addform input{
+    padding: 15px;
+    font-size: 20px;
+    box-shadow: 10px 10px 10px ;
+
+}
+.addform button{
+      padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 1px ;
+    background-color: red;
+    color: whitesmoke;
+}
+.addform button:hover{
+    box-shadow: none;
+}
