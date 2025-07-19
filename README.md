@@ -56,6 +56,30 @@ Expense-Tracker/
 
 ---
 
+📬 API Endpoints (Backend)
+🔐 Authentication
+POST /signup – Register user
+POST /login – Login user
+
+📊 Personal Expenses
+POST /add-expense
+GET /expenses/:username
+PUT /expense-edit/:id
+DELETE /delete/:id
+DELETE /expense-delete/:username
+
+👥 Group Management
+POST /group – Create group
+POST /join-group/:inviteCode – Join group
+POST /group-expenses/:invitelink – Add group expense
+GET /groupchat/:inviteCode – View group
+DELETE /group-delete/:id – Delete group expense
+
+🧮 Calculator
+POST /divider – Split bill among members
+
+---
+
 ## ⚙️ Setup Instructions
 
 
@@ -88,25 +112,5 @@ cd backend
 npm test
 Uses Supertest + Jest for API testing.
 
-📬 API Endpoints (Backend)
-🔐 Authentication
-POST /signup – Register user
-POST /login – Login user
 
-📊 Personal Expenses
-POST /add-expense
-GET /expenses/:username
-PUT /expense-edit/:id
-DELETE /delete/:id
-DELETE /expense-delete/:username
-
-👥 Group Management
-POST /group – Create group
-POST /join-group/:inviteCode – Join group
-POST /group-expenses/:invitelink – Add group expense
-GET /groupchat/:inviteCode – View group
-DELETE /group-delete/:id – Delete group expense
-
-🧮 Calculator
-POST /divider – Split bill among members
 
