@@ -36,13 +36,13 @@ secret=your_jwt_secret
 
 ---
 
-🚀 Running the Server 
+🚀 Running the Server :
 npm start
 Server runs on http://localhost:5000
 
 ---
 
-🧪 Running Tests
+🧪 Running Tests: 
 npm test
 
 ---  
