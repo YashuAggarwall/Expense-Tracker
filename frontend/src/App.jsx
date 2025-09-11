@@ -3,7 +3,7 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import AddExpense from "./components/AddExpense";
 import ExpenseList from "./components/ExpenseList";
-import PrivateRoute from "./components/PrivateRout";
+import PrivateRoute from "./components/PrivateRoute";
 import Create from "./group/Create";
 import HomePage from "./HomePage/HomePage";
 import Join from "./group/Join";
