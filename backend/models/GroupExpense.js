@@ -25,7 +25,17 @@ const groupexpenseSchema = new mongoose.Schema({
 
     description: {
         type: String,
-        required: true
+        default: ""
+    },
+
+    isSettlement: {
+        type: Boolean,
+        default: false
+    },
+
+    settledWith: {
+        type: String,
+        default: null
     }
 }, { timestamps: true })
 
